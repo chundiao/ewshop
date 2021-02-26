@@ -13,6 +13,13 @@
       "unicode_decimal": 59018
     },
     {
+      "icon_id": "2557599",
+      "name": "back-top",
+      "font_class": "back_top",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
       "icon_id": "3692669",
       "name": "cart",
       "font_class": "cart",
@@ -39,6 +46,13 @@
       "font_class": "category",
       "unicode": "e64e",
       "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "18988350",
+      "name": "collect",
+      "font_class": "collect",
+      "unicode": "e670",
+      "unicode_decimal": 58992
     }
   ]
 }

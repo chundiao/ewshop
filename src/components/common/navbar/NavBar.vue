@@ -40,6 +40,7 @@
     right: 0;
     top: 0;
     box-shadow: 0 2px 0 rgba(100, 100, 100, .2);
+    z-index: 999;
 
     .left, .right{
       width: 50px;

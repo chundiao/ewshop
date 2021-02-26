@@ -1,7 +1,7 @@
 <template>
   <div class="recommends">
     <div v-for="item in goods.slice(0, 4)" :key="item.id" class="recommend-item" @click="itemDetail(item.id)" >
-      <div class="icon"><img :src="item.cover_url" alt=""></div>
+      <div class="icon"><img v-lazy="item.cover_url" alt=""></div>
       <div class="title">{{ item.title }}</div>
     </div>
   </div>
@@ -44,7 +44,7 @@
       .icon {
         margin-bottom: 8px;
         img {
-          width: 80px;
+          width: 90px;
         }
       }
 

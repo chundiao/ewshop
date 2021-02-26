@@ -1,5 +1,12 @@
 <template>
-  <router-view/>
+
+  <router-view v-slot="{Component}">
+    <transition>
+      <keep-alive>
+        <component :is="Component"/>
+      </keep-alive>
+    </transition>
+  </router-view>
 
   <div id="tab-bar">
     <div class="tab-bar-item">
@@ -16,7 +23,11 @@
     </div>
     <div class="tab-bar-item">
       <router-link to="/shopcart">
-        <div class="icon"><i class="iconfont icon-cart"></i></div>
+        <div class="icon">
+          <van-badge :content="10" max="8">
+            <i class="iconfont icon-cart"></i>
+          </van-badge>
+        </div>
         <div class="text">购物车</div>
       </router-link>
     </div>
